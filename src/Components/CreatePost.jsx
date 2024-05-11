@@ -13,7 +13,7 @@ const CreatePost = () => {
   const postTagsElm = useRef();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Always prevent default form submission first
 
     const userId = userIdElm.current.value;
     const postImgUrl = postImgUrlElm.current.value;
@@ -21,6 +21,18 @@ const CreatePost = () => {
     const postBody = postBodyElm.current.value;
     const postReaction = postReactionElm.current.value;
     const postTags = postTagsElm.current.value.split(" ");
+
+    if (
+      userId.trim() === "" ||
+      postImgUrl.trim() === "" ||
+      postTitle.trim() === "" ||
+      postBody.trim() === "" ||
+      postReaction.trim() === "" ||
+      postTags.length === 0
+    ) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
 
     addPost(userId, postImgUrl, postTitle, postBody, postReaction, postTags);
 

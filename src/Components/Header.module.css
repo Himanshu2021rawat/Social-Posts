@@ -25,3 +25,24 @@
   padding: 1vw;
   text-align: center;
 }
+
+@media (max-width: 440px) {
+  .headerBar {
+    justify-content: center;
+    font-size: 10vw;
+    gap: 10%;
+  }
+
+  .headerBar input {
+    width: 54vw;
+    font-size: 4vw;
+    border-radius: 12px;
+  }
+
+  .headerBar input::placeholder {
+    color: #333;
+    font-weight: 500;
+    padding: 3vw;
+    text-align: center;
+  }
+}

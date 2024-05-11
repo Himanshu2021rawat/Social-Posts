@@ -15,8 +15,8 @@
   gap: 5%;
   align-items: center;
   flex-direction: column;
-  /* background-color: #333; */
-  background-image: url("../assets/form2.avif");
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background-image: url("../assets/form2.avif"); */
   background-position: center;
   background-size: cover;
   color: white;
@@ -68,4 +68,42 @@
   background-color: yellowgreen;
 }
 
+@media (max-width: 440px) {
+  .PostForm {
+    width: 83vw;
+  }
 
+  .PostForm form {
+    width: 65vw;
+    gap: 2%;
+    align-items: flex-start;
+  }
+
+  .PostForm form input {
+    width: 50vw;
+    border-radius: 0px;
+    padding: 8px;
+  }
+
+  .PostForm form label {
+    margin: 4vw;
+  }
+
+  .PostForm form textarea {
+    width: 50vw;
+    margin-left: 4vw;
+    padding: 8px;
+  }
+
+  .PostForm button {
+    width: 50vw;
+    height: 4vh;
+    margin-left: 5vw;
+    font-size: 6vw;
+  }
+
+  .PostForm button:hover {
+    cursor: pointer;
+    background-color: yellowgreen;
+  }
+}

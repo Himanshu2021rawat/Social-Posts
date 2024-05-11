@@ -3,13 +3,13 @@ import Post from "./Post";
 import { PostLists } from "./store/PostListStore";
 import WelcomeMessage from "./WelcomeMessage";
 
-const PostList = () => {
+const PostList = ({ setNavigation }) => {
   const { postList } = useContext(PostLists);
   return (
     <>
       <div className="PostListCards">
         {postList.length === 0 ? (
-          <WelcomeMessage />
+          <WelcomeMessage setNavigation={setNavigation} />
         ) : (
           postList.map((post) => <Post key={post.id} post={post} />)
         )}

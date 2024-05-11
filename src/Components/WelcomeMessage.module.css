@@ -21,3 +21,42 @@
   color: #666;
   font-size: 20px;
 }
+
+button {
+  width: 30vw;
+  height: 4vh;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid blue;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+@media (max-width: 440px) {
+  .welcomecontainer {
+    padding: 10px;
+    margin-top: 20vh;
+  }
+
+  .welcomeheading {
+    color: #333;
+    font-size: 7vw;
+    margin-bottom: 10px;
+  }
+
+  .subheading {
+    color: #666;
+    font-size: 4vw;
+  }
+
+  button {
+    width: 50vw;
+    height: 3vh;
+    color: blue;
+  }
+}

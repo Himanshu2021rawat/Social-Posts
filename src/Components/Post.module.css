@@ -70,3 +70,9 @@ a {
   font-size: 35px;
   margin-left: auto;
 }
+
+@media (max-width: 440px) {
+  .postCard {
+    width: 67vw;
+  }
+}

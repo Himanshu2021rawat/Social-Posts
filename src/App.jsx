@@ -16,7 +16,11 @@ const App = () => {
           <Header />
           <div className="CombineSC">
             <Sidebar navigation={navigation} setNavigation={setNavigation} />
-            {navigation === "Home" ? <PostList /> : <CreatePost />}
+            {navigation === "Home" ? (
+              <PostList setNavigation={setNavigation} />
+            ) : (
+              <CreatePost />
+            )}
           </div>
         </div>
       </PostListStore>
