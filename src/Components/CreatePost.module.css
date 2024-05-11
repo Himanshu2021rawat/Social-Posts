@@ -1,0 +1,71 @@
+.PostForm {
+  width: 83vw;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.PostForm form {
+  border-top: 2px solid white;
+  width: 50vw;
+  height: 91vh;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #333; */
+  background-image: url("../assets/form2.avif");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  box-shadow: 12px 12px 12px #dadada;
+}
+
+.PostForm form input {
+  width: 20vw;
+  margin: 15px;
+  height: 4vh;
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  border: 1px solid #dadada;
+}
+
+.PostForm form input::placeholder {
+  padding: 12px;
+}
+
+.PostForm form div {
+  margin: 1px;
+}
+
+.PostForm form label {
+  margin: 1vw;
+}
+
+.PostForm form textarea {
+  width: 20vw;
+  background-color: transparent;
+  color: white;
+
+  padding: 12px;
+}
+
+.PostForm button {
+  width: 16vw;
+  height: 4vh;
+  background-color: transparent;
+  border: 2px solid #dadada;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.PostForm button:hover {
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+
+
